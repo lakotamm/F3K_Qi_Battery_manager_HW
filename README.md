@@ -3,7 +3,7 @@
 
 The aim of this project is to create a Battery manager for F3K gliders.
 
-This Wireless charger and battery charger should take care of:
+This Wireless charger and battery monitor should take care of:
 - wireless charging 1s Lipol batteries (incl. temperature monitoring)
 - contactless switching ON/OFF of the electronics
 - protecting battery from overdischarging
