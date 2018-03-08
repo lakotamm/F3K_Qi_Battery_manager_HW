@@ -1,4 +1,4 @@
-update=04/03/2018 01:49:27
+update=08/03/2018 01:55:55
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,6 +23,8 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
+[general]
+version=1
 [eeschema]
 version=1
 LibDir=../kicad-library;../lakotamm-kicad-lib
@@ -62,5 +64,4 @@ LibName32=valves
 LibName33=library/stm32
 LibName34=lakotamm-microprocessors
 LibName35=lakotamm-powersupply
-[general]
-version=1
+LibName36=lakotamm-sensor
