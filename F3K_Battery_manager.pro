@@ -1,4 +1,4 @@
-update=08/03/2018 01:55:55
+update=08/03/2018 10:48:45
 version=1
 last_client=kicad
 [pcbnew]
@@ -65,3 +65,4 @@ LibName33=library/stm32
 LibName34=lakotamm-microprocessors
 LibName35=lakotamm-powersupply
 LibName36=lakotamm-sensor
+LibName37=lakotamm-transistor

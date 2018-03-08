@@ -35,6 +35,7 @@ LIBS:stm32
 LIBS:lakotamm-microprocessors
 LIBS:lakotamm-powersupply
 LIBS:lakotamm-sensor
+LIBS:lakotamm-transistor
 LIBS:F3K_Battery_manager-cache
 EELAYER 25 0
 EELAYER END
@@ -62,6 +63,7 @@ F5 "USART_TX" O L 5900 3350 60
 F6 "USART_RX" I L 5900 3250 60 
 F7 "HAL_SEN_1" I L 5900 4600 60 
 F8 "HAL_SEN_2" I L 5900 4750 60 
+F9 "BUZZER" O R 7650 2850 60 
 $EndSheet
 $Comp
 L Conn_01x04 J?
@@ -281,4 +283,60 @@ F 3 "" H 4300 1550 50  0001 C CNN
 	1    4300 1550
 	1    0    0    -1  
 $EndComp
+$Comp
+L Buzzer BZ?
+U 1 1 5AA0FFE4
+P 8400 2500
+F 0 "BZ?" H 8550 2550 50  0000 L CNN
+F 1 "Buzzer" H 8550 2450 50  0000 L CNN
+F 2 "" V 8375 2600 50  0001 C CNN
+F 3 "" V 8375 2600 50  0001 C CNN
+	1    8400 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CSD13380F3 Q?
+U 1 1 5AA10AB6
+P 8150 2850
+F 0 "Q?" H 8350 2925 50  0000 L CNN
+F 1 "CSD13380F3" H 8350 2850 50  0000 L CNN
+F 2 "" H 8350 2775 50  0001 L CIN
+F 3 "http://www.ti.com/product/CSD13380F3" H 7450 2550 50  0001 L CNN
+	1    8150 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR?
+U 1 1 5AA11015
+P 8250 2300
+F 0 "#PWR?" H 8250 2150 50  0001 C CNN
+F 1 "VDD" H 8250 2450 50  0000 C CNN
+F 2 "" H 8250 2300 50  0001 C CNN
+F 3 "" H 8250 2300 50  0001 C CNN
+	1    8250 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 2300 8250 2400
+Wire Wire Line
+	8250 2400 8300 2400
+Wire Wire Line
+	8300 2600 8250 2600
+Wire Wire Line
+	8250 2600 8250 2650
+$Comp
+L GND #PWR?
+U 1 1 5AA112B0
+P 8250 3100
+F 0 "#PWR?" H 8250 2850 50  0001 C CNN
+F 1 "GND" H 8250 2950 50  0000 C CNN
+F 2 "" H 8250 3100 50  0001 C CNN
+F 3 "" H 8250 3100 50  0001 C CNN
+	1    8250 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 3050 8250 3100
+Wire Wire Line
+	7650 2850 7950 2850
 $EndSCHEMATC

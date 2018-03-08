@@ -35,6 +35,7 @@ LIBS:stm32
 LIBS:lakotamm-microprocessors
 LIBS:lakotamm-powersupply
 LIBS:lakotamm-sensor
+LIBS:lakotamm-transistor
 LIBS:F3K_Battery_manager-cache
 EELAYER 25 0
 EELAYER END
@@ -95,7 +96,7 @@ L TPS709 U?
 U 1 1 5A9B30C7
 P 3800 6250
 F 0 "U?" H 4100 6650 60  0000 C CNN
-F 1 "TPS709" H 3550 6650 60  0000 C CNN
+F 1 "TPS70925" H 3550 6650 60  0000 C CNN
 F 2 "lakotamm-miscellaneous:WSON-6_2x2mm_Pitch0.65mm" H 3850 5600 60  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tps709.pdf" H 3800 5750 60  0001 C CNN
 	1    3800 6250
@@ -167,7 +168,7 @@ L C C?
 U 1 1 5A9B323D
 P 4650 6250
 F 0 "C?" H 4675 6350 50  0000 L CNN
-F 1 "2u2 6V3" V 4850 6100 50  0000 L CNN
+F 1 "10uF 6V3" V 4850 6100 50  0000 L CNN
 F 2 "" H 4688 6100 50  0001 C CNN
 F 3 "" H 4650 6250 50  0001 C CNN
 	1    4650 6250
@@ -515,4 +516,6 @@ F 3 "" H 5200 6000 50  0001 C CNN
 	1    5200 6000
 	1    0    0    -1  
 $EndComp
+Text HLabel 7400 5150 0    60   Output ~ 0
+BUZZER
 $EndSCHEMATC
