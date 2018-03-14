@@ -31,11 +31,11 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:stm32
 LIBS:lakotamm-microprocessors
 LIBS:lakotamm-powersupply
 LIBS:lakotamm-sensor
 LIBS:lakotamm-transistor
+LIBS:lakotamm-wireless
 LIBS:F3K_Battery_manager-cache
 EELAYER 25 0
 EELAYER END
@@ -544,4 +544,6 @@ F 4 "TPS70925DBV" H 3800 6600 60  0001 C CNN "MPN"
 	1    3800 6250
 	1    0    0    -1  
 $EndComp
+Text Notes 4950 3000 0    60   ~ 0
+All decoupling capacitors have purposely the same value\n
 $EndSCHEMATC

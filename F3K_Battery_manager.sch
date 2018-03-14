@@ -31,11 +31,11 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:stm32
 LIBS:lakotamm-microprocessors
 LIBS:lakotamm-powersupply
 LIBS:lakotamm-sensor
 LIBS:lakotamm-transistor
+LIBS:lakotamm-wireless
 LIBS:F3K_Battery_manager-cache
 EELAYER 25 0
 EELAYER END

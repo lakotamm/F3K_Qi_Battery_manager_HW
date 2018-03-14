@@ -1,4 +1,4 @@
-update=10/03/2018 17:20:03
+update=13/03/2018 22:28:27
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,6 +23,8 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
+[general]
+version=1
 [eeschema]
 version=1
 LibDir=../kicad-library;../lakotamm-kicad-lib
@@ -64,5 +66,4 @@ LibName34=lakotamm-microprocessors
 LibName35=lakotamm-powersupply
 LibName36=lakotamm-sensor
 LibName37=lakotamm-transistor
-[general]
-version=1
+LibName38=lakotamm-wireless
