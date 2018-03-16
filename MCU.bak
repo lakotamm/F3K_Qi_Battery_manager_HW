@@ -1,15 +1,8 @@
 EESchema Schematic File Version 2
 LIBS:power
 LIBS:device
-LIBS:switches
-LIBS:relays
-LIBS:motors
-LIBS:transistors
-LIBS:conn
 LIBS:linear
 LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
@@ -24,18 +17,19 @@ LIBS:audio
 LIBS:interface
 LIBS:digital-audio
 LIBS:philips
-LIBS:display
 LIBS:cypress
 LIBS:siliconi
 LIBS:opto
 LIBS:atmel
 LIBS:contrib
-LIBS:valves
 LIBS:lakotamm-microprocessors
 LIBS:lakotamm-powersupply
 LIBS:lakotamm-sensor
 LIBS:lakotamm-transistor
 LIBS:lakotamm-wireless
+LIBS:MCU_ST_STM32
+LIBS:Transistor
+LIBS:Connector
 LIBS:F3K_Battery_manager-cache
 EELAYER 25 0
 EELAYER END
@@ -468,7 +462,7 @@ Text HLabel 4800 4300 0    60   Input ~ 0
 HAL_SEN_1
 Wire Wire Line
 	4800 4300 4900 4300
-Text HLabel 7450 4050 2    60   Input ~ 0
+Text HLabel 8050 5250 0    60   Input ~ 0
 HAL_SEN_2
 $Comp
 L PWR_FLAG #FLG?
@@ -494,11 +488,9 @@ F 3 "" H 5200 6000 50  0001 C CNN
 $EndComp
 Text HLabel 7400 3700 2    60   Output ~ 0
 BUZZER
-Text HLabel 4800 4000 0    60   Output ~ 0
-Control_OUT1
-Text HLabel 4800 4100 0    60   Output ~ 0
-Control_OUT2
-Text HLabel 7450 4150 2    60   Output ~ 0
+Text HLabel 8050 5550 0    60   Output ~ 0
+Control_OUT
+Text HLabel 8050 5400 0    60   Output ~ 0
 ENA
 Text HLabel 4800 4500 0    60   Input ~ 0
 OUT_Voltage
@@ -518,8 +510,6 @@ Wire Wire Line
 	4800 4000 4900 4000
 Wire Wire Line
 	4800 4100 4900 4100
-Text Notes 3850 3950 0    60   ~ 0
-Check\nOPEN DRAIN!\n
 $Comp
 L STM32L011F4Ux U?
 U 1 1 5AA7A3A1

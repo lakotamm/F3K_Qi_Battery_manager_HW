@@ -1,15 +1,8 @@
 EESchema Schematic File Version 2
 LIBS:power
 LIBS:device
-LIBS:switches
-LIBS:relays
-LIBS:motors
-LIBS:transistors
-LIBS:conn
 LIBS:linear
 LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
@@ -24,18 +17,19 @@ LIBS:audio
 LIBS:interface
 LIBS:digital-audio
 LIBS:philips
-LIBS:display
 LIBS:cypress
 LIBS:siliconi
 LIBS:opto
 LIBS:atmel
 LIBS:contrib
-LIBS:valves
 LIBS:lakotamm-microprocessors
 LIBS:lakotamm-powersupply
 LIBS:lakotamm-sensor
 LIBS:lakotamm-transistor
 LIBS:lakotamm-wireless
+LIBS:MCU_ST_STM32
+LIBS:Transistor
+LIBS:Connector
 LIBS:F3K_Battery_manager-cache
 EELAYER 25 0
 EELAYER END
@@ -188,7 +182,9 @@ F 3 "" H 4850 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5850 4450 5850 4550
+	5850 4450 5850 4500
+Wire Wire Line
+	5850 4500 5850 4550
 Wire Wire Line
 	5750 4450 5750 4500
 Wire Wire Line
@@ -197,11 +193,19 @@ Connection ~ 5850 4500
 Wire Wire Line
 	6850 4150 6850 4200
 Wire Wire Line
-	6850 3750 6850 3850
+	6850 3750 6850 3800
+Wire Wire Line
+	6850 3800 6850 3850
 Wire Wire Line
 	6850 3350 6850 3450
 Wire Wire Line
-	6400 3350 8300 3350
+	6400 3350 6550 3350
+Wire Wire Line
+	6550 3350 6850 3350
+Wire Wire Line
+	6850 3350 8200 3350
+Wire Wire Line
+	8200 3350 8300 3350
 Connection ~ 6850 3800
 Wire Wire Line
 	6550 3700 6550 3800
@@ -216,7 +220,13 @@ Wire Wire Line
 	8200 3950 8200 4200
 Connection ~ 8200 3350
 Wire Wire Line
-	3650 3550 5200 3550
+	3650 3550 3800 3550
+Wire Wire Line
+	3800 3550 4550 3550
+Wire Wire Line
+	4550 3550 4850 3550
+Wire Wire Line
+	4850 3550 5200 3550
 Wire Wire Line
 	3800 3550 3800 3700
 Wire Wire Line
@@ -234,21 +244,12 @@ Connection ~ 4850 3550
 Wire Wire Line
 	4850 3900 4850 3950
 Wire Wire Line
-	4650 3950 5200 3950
+	4650 3950 4850 3950
+Wire Wire Line
+	4850 3950 5200 3950
 $Comp
 L R R?
 U 1 1 5AA41C36
-P 7200 3600
-F 0 "R?" V 7280 3600 50  0000 C CNN
-F 1 "R" V 7200 3600 50  0000 C CNN
-F 2 "" V 7130 3600 50  0001 C CNN
-F 3 "" H 7200 3600 50  0001 C CNN
-	1    7200 3600
-	0    1    1    0   
-$EndComp
-$Comp
-L R R?
-U 1 1 5AA41D55
 P 7200 3800
 F 0 "R?" V 7280 3800 50  0000 C CNN
 F 1 "R" V 7200 3800 50  0000 C CNN
@@ -258,19 +259,15 @@ F 3 "" H 7200 3800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7050 3600 7000 3600
+	7050 3800 7000 3800
 Wire Wire Line
-	7000 3600 7000 4000
+	7000 3800 7000 3800
 Wire Wire Line
-	6400 3800 7050 3800
-Text HLabel 7400 3600 2    60   Input ~ 0
-Control_OUT1
+	7000 3800 7000 4000
 Text HLabel 7400 3800 2    60   Input ~ 0
-Control_OUT2
+Control_OUT
 Wire Wire Line
 	7350 3800 7400 3800
-Wire Wire Line
-	7350 3600 7400 3600
 Text HLabel 4650 3950 0    60   Input ~ 0
 ENA
 Connection ~ 4850 3950
@@ -311,7 +308,11 @@ F 3 "" H 4750 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4650 4100 5200 4100
+	4650 4100 4750 4100
+Wire Wire Line
+	4750 4100 5000 4100
+Wire Wire Line
+	5000 4100 5200 4100
 Wire Wire Line
 	5000 4100 5000 4200
 Wire Wire Line
@@ -353,4 +354,10 @@ Text HLabel 7400 4000 2    60   Output ~ 0
 OUT_Voltage
 Wire Wire Line
 	7000 4000 7400 4000
+Wire Wire Line
+	6400 3800 6550 3800
+Wire Wire Line
+	6550 3800 6850 3800
+Wire Wire Line
+	6850 3800 7000 3800
 $EndSCHEMATC

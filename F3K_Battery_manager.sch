@@ -1,15 +1,8 @@
 EESchema Schematic File Version 2
 LIBS:power
 LIBS:device
-LIBS:switches
-LIBS:relays
-LIBS:motors
-LIBS:transistors
-LIBS:conn
 LIBS:linear
 LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
@@ -24,18 +17,19 @@ LIBS:audio
 LIBS:interface
 LIBS:digital-audio
 LIBS:philips
-LIBS:display
 LIBS:cypress
 LIBS:siliconi
 LIBS:opto
 LIBS:atmel
 LIBS:contrib
-LIBS:valves
 LIBS:lakotamm-microprocessors
 LIBS:lakotamm-powersupply
 LIBS:lakotamm-sensor
 LIBS:lakotamm-transistor
 LIBS:lakotamm-wireless
+LIBS:MCU_ST_STM32
+LIBS:Transistor
+LIBS:Connector
 LIBS:F3K_Battery_manager-cache
 EELAYER 25 0
 EELAYER END
@@ -63,13 +57,12 @@ F5 "USART_RX" I L 4850 3100 60
 F6 "HAL_SEN_1" I L 4850 5600 60 
 F7 "HAL_SEN_2" I L 4850 5800 60 
 F8 "BUZZER" O R 6600 2700 60 
-F9 "Control_OUT1" O R 6600 3900 60 
-F10 "Control_OUT2" O R 6600 4000 60 
-F11 "ENA" O R 6600 4200 60 
-F12 "OUT_Voltage" I R 6600 4400 60 
-F13 "OUT_Current" I R 6600 4500 60 
-F14 "BATT_Voltage" I L 4850 4150 60 
-F15 "USART_TX" B L 4850 3200 60 
+F9 "Control_OUT" O R 6600 4000 60 
+F10 "ENA" O R 6600 4200 60 
+F11 "OUT_Voltage" I R 6600 4400 60 
+F12 "OUT_Current" I R 6600 4500 60 
+F13 "BATT_Voltage" I L 4850 4150 60 
+F14 "USART_TX" B L 4850 3200 60 
 $EndSheet
 $Comp
 L Conn_01x04 J?
@@ -112,6 +105,7 @@ F 0 "U?" H 4200 5350 60  0000 C CNN
 F 1 "DRV5032" H 3600 5350 60  0000 C CNN
 F 2 "lakotamm-sensor:X2SON_4_1.10x1.40mm" H 3900 5250 60  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/drv5032.pdf" H 3850 5150 60  0001 C CNN
+F 4 "DRV5032FD" H 3850 5700 60  0001 C CNN "MPN"
 	1    3850 5700
 	1    0    0    -1  
 $EndComp
@@ -316,11 +310,10 @@ U 5AA4001F
 F0 "Boost converter" 60
 F1 "boost_converter.sch" 60
 F2 "VOUT" O R 9150 4000 60 
-F3 "Control_OUT1" I L 7100 3900 60 
-F4 "Control_OUT2" I L 7100 4000 60 
-F5 "ENA" I L 7100 4200 60 
-F6 "OUT_Current" O L 7100 4400 60 
-F7 "OUT_Voltage" O L 7100 4500 60 
+F3 "Control_OUT" I L 7100 4000 60 
+F4 "ENA" I L 7100 4200 60 
+F5 "OUT_Current" O L 7100 4400 60 
+F6 "OUT_Voltage" O L 7100 4500 60 
 $EndSheet
 Wire Wire Line
 	7100 4400 6600 4400
@@ -330,8 +323,6 @@ Wire Wire Line
 	6600 4200 7100 4200
 Wire Wire Line
 	6600 4000 7100 4000
-Wire Wire Line
-	6600 3900 7100 3900
 $Comp
 L Conn_01x03 J?
 U 1 1 5AA45C5D

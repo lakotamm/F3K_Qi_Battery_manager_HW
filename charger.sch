@@ -1,15 +1,8 @@
 EESchema Schematic File Version 2
 LIBS:power
 LIBS:device
-LIBS:switches
-LIBS:relays
-LIBS:motors
-LIBS:transistors
-LIBS:conn
 LIBS:linear
 LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
@@ -24,18 +17,19 @@ LIBS:audio
 LIBS:interface
 LIBS:digital-audio
 LIBS:philips
-LIBS:display
 LIBS:cypress
 LIBS:siliconi
 LIBS:opto
 LIBS:atmel
 LIBS:contrib
-LIBS:valves
 LIBS:lakotamm-microprocessors
 LIBS:lakotamm-powersupply
 LIBS:lakotamm-sensor
 LIBS:lakotamm-transistor
 LIBS:lakotamm-wireless
+LIBS:MCU_ST_STM32
+LIBS:Transistor
+LIBS:Connector
 LIBS:F3K_Battery_manager-cache
 EELAYER 25 0
 EELAYER END
@@ -291,9 +285,7 @@ F 3 "" H 4900 3100 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	8550 4700 8550 4750
-Wire Wire Line
-	8550 4750 8550 4800
+	8550 4700 8550 4800
 Wire Wire Line
 	8750 4750 8550 4750
 Connection ~ 8550 4750
@@ -304,13 +296,7 @@ Wire Wire Line
 Wire Wire Line
 	6400 4150 6500 4150
 Wire Wire Line
-	6500 4150 6500 4300
-Wire Wire Line
-	6500 4300 6500 4400
-Wire Wire Line
-	6500 4400 6500 4550
-Wire Wire Line
-	6500 4550 6500 4650
+	6500 4150 6500 4650
 Wire Wire Line
 	6400 4300 6500 4300
 Connection ~ 6500 4300
@@ -333,9 +319,7 @@ Wire Wire Line
 Wire Wire Line
 	6400 3250 6500 3250
 Wire Wire Line
-	8350 3800 8550 3800
-Wire Wire Line
-	8550 3800 8700 3800
+	8350 3800 8700 3800
 Connection ~ 8550 3800
 Wire Wire Line
 	6400 4050 6700 4050
@@ -352,21 +336,13 @@ Wire Wire Line
 Wire Wire Line
 	5200 3850 4650 3850
 Wire Wire Line
-	4650 3850 4650 4050
-Wire Wire Line
-	4650 4050 4650 4300
-Wire Wire Line
-	4650 4300 4650 4550
+	4650 3850 4650 4550
 Wire Wire Line
 	4650 4550 4750 4550
 Wire Wire Line
 	4650 3550 5200 3550
 Wire Wire Line
-	4650 2850 4650 3100
-Wire Wire Line
-	4650 3100 4650 3350
-Wire Wire Line
-	4650 3350 4650 3550
+	4650 2850 4650 3550
 Wire Wire Line
 	5050 2850 5200 2850
 Wire Wire Line
