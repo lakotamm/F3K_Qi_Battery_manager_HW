@@ -521,4 +521,20 @@ F 3 "" H 1650 4450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1850 4450 2100 4450
+$Comp
+L Antenna_Loop AE1
+U 1 1 5AB18F00
+P 1100 4350
+F 0 "AE1" H 1150 4600 50  0000 C CNN
+F 1 "Wireless antenna" H 1150 4550 50  0000 C CNN
+F 2 "" H 1100 4350 50  0001 C CNN
+F 3 "" H 1100 4350 50  0001 C CNN
+F 4 "IWAS3827ECEB100J50" H 1100 4350 60  0001 C CNN "MPN"
+	1    1100 4350
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 1300 4250
+NoConn ~ 1300 4350
+Text Notes 550  3950 0    60   ~ 0
+Antenna for Kicost\n
 $EndSCHEMATC
