@@ -489,9 +489,9 @@ $EndComp
 Text HLabel 7400 3700 2    60   Output ~ 0
 BUZZER
 Text HLabel 8050 5550 0    60   Output ~ 0
-Control_OUT
+Voltage_control
 Text HLabel 8050 5400 0    60   Output ~ 0
-ENA
+Enable_boost
 Text HLabel 4800 4500 0    60   Input ~ 0
 OUT_Voltage
 Text HLabel 4800 4600 0    60   Input ~ 0
@@ -536,4 +536,8 @@ F 4 "TPS70925DBV" H 3800 6600 60  0001 C CNN "MPN"
 $EndComp
 Text Notes 4950 3000 0    60   ~ 0
 All decoupling capacitors have purposely the same value\n
+Text HLabel 8050 5700 0    60   Input ~ 0
+~CHARGING
+Text HLabel 8050 5850 0    60   Output ~ 0
+Charge_control
 $EndSCHEMATC
