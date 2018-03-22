@@ -64,6 +64,7 @@ F12 "USART_TX" B L 4850 3200 60
 F13 "~CHARGING" I L 4850 4350 60 
 F14 "Voltage_control" O R 6600 4000 60 
 F15 "Enable_boost" O R 6600 4200 60 
+F16 "Charge_control" O L 4850 4550 60 
 $EndSheet
 $Comp
 L Conn_01x04 J5
@@ -544,4 +545,6 @@ NoConn ~ 1350 4050
 NoConn ~ 1350 4150
 Text Notes 650  3800 0    60   ~ 0
 Antenna - only for Kicost\n
+Wire Wire Line
+	4250 4550 4850 4550
 $EndSCHEMATC

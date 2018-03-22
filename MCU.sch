@@ -396,7 +396,7 @@ L R R4
 U 1 1 5A9B431F
 P 3200 4200
 F 0 "R4" V 3280 4200 50  0000 C CNN
-F 1 "10k" V 3200 4200 50  0000 C CNN
+F 1 "R" V 3200 4200 50  0000 C CNN
 F 2 "" V 3130 4200 50  0001 C CNN
 F 3 "" H 3200 4200 50  0001 C CNN
 	1    3200 4200
@@ -462,7 +462,7 @@ Text HLabel 4800 4300 0    60   Input ~ 0
 HAL_SEN_1
 Wire Wire Line
 	4800 4300 4900 4300
-Text HLabel 8050 5250 0    60   Input ~ 0
+Text HLabel 7400 4100 2    60   Input ~ 0
 HAL_SEN_2
 $Comp
 L PWR_FLAG #FLG3
@@ -488,9 +488,9 @@ F 3 "" H 5200 6000 50  0001 C CNN
 $EndComp
 Text HLabel 7400 3700 2    60   Output ~ 0
 BUZZER
-Text HLabel 8050 5550 0    60   Output ~ 0
+Text HLabel 7400 4200 2    60   Output ~ 0
 Voltage_control
-Text HLabel 8050 5400 0    60   Output ~ 0
+Text HLabel 4800 4100 0    60   Output ~ 0
 Enable_boost
 Text HLabel 4800 4500 0    60   Input ~ 0
 OUT_Voltage
@@ -536,8 +536,14 @@ F 4 "TPS70925DBV" H 3800 6600 60  0001 C CNN "MPN"
 $EndComp
 Text Notes 4950 3000 0    60   ~ 0
 All decoupling capacitors have purposely the same value\n
-Text HLabel 8050 5700 0    60   Input ~ 0
+Text HLabel 7400 3900 2    60   Input ~ 0
 ~CHARGING
-Text HLabel 8050 5850 0    60   Output ~ 0
+Text HLabel 4800 4000 0    60   Output ~ 0
 Charge_control
+Wire Wire Line
+	7300 4200 7400 4200
+Wire Wire Line
+	7300 4100 7400 4100
+Wire Wire Line
+	7300 3900 7400 3900
 $EndSCHEMATC

@@ -528,4 +528,20 @@ Text Label 2000 4600 2    60   ~ 0
 Thermistor_OFF
 Wire Wire Line
 	2000 4600 2100 4600
+$Comp
+L Antenna_Loop AE?
+U 1 1 5AB2F1C7
+P 1150 4150
+F 0 "AE?" H 1200 4400 50  0000 C CNN
+F 1 "Antenna_Loop" H 1200 4350 50  0000 C CNN
+F 2 "" H 1150 4150 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/34338/iwas3827.pdf" H 1150 4150 50  0001 C CNN
+F 4 "IWAS3827ECEB100J50" H 1150 4150 60  0001 C CNN "MPN"
+	1    1150 4150
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 1350 4050
+NoConn ~ 1350 4150
+Text Notes 650  3800 0    60   ~ 0
+Antenna - only for Kicost\n
 $EndSCHEMATC
