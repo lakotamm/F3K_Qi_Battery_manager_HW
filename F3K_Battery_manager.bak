@@ -64,6 +64,8 @@ F12 "Voltage_control" O R 6600 4000 60
 F13 "Enable_boost" O R 6600 4200 60 
 F14 "Charge_control" O L 4850 4550 60 
 F15 "LPUART_TX" B R 6600 3450 60 
+F16 "Output_Voltage" I R 6600 4400 60 
+F17 "Output_Current" I R 6600 4550 60 
 $EndSheet
 $Comp
 L Conn_01x04 J3
@@ -257,6 +259,8 @@ F1 "boost_converter.sch" 60
 F2 "VOUT" O R 9150 4000 60 
 F3 "ENA" I L 7100 4200 60 
 F4 "Voltage_control" I L 7100 4000 60 
+F5 "Output_voltage" O L 7100 4400 60 
+F6 "Output_current" O L 7100 4550 60 
 $EndSheet
 Wire Wire Line
 	6600 4200 7100 4200
@@ -484,4 +488,8 @@ Wire Wire Line
 	6700 3450 6600 3450
 Text Label 9700 3900 2    60   ~ 0
 LPUART_TX
+Wire Wire Line
+	6600 4400 7100 4400
+Wire Wire Line
+	6600 4550 7100 4550
 $EndSCHEMATC
