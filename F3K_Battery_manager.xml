@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/home/lakotamm/GIT/F3K_Qi_Battery_manager_HW/F3K_Battery_manager.sch</source>
-    <date>Mon 26 Mar 2018 12:51:08 AM CEST</date>
+    <date>Sat 31 Mar 2018 06:52:14 PM CEST</date>
     <tool>Eeschema 4.0.7-e2-6376~60~ubuntu17.10.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -30,20 +30,7 @@
         <comment number="4" value=""/>
       </title_block>
     </sheet>
-    <sheet number="3" name="/Boost converter/" tstamps="/5AA4001F/">
-      <title_block>
-        <title/>
-        <company/>
-        <rev/>
-        <date/>
-        <source>boost_converter.sch</source>
-        <comment number="1" value=""/>
-        <comment number="2" value=""/>
-        <comment number="3" value=""/>
-        <comment number="4" value=""/>
-      </title_block>
-    </sheet>
-    <sheet number="4" name="/Charger/" tstamps="/5AA3AC9F/">
+    <sheet number="3" name="/Charger/" tstamps="/5AA3AC9F/">
       <title_block>
         <title/>
         <company/>
@@ -107,13 +94,6 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5AA46769</tstamp>
     </comp>
-    <comp ref="R2">
-      <value>680R</value>
-      <footprint>Resistors_SMD:R_0402</footprint>
-      <libsource lib="device" part="R"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5AA59CAF</tstamp>
-    </comp>
     <comp ref="Q1">
       <value>CSD13385F5</value>
       <datasheet>http://www.ti.com/lit/ds/symlink/csd13385f5.pdf</datasheet>
@@ -163,63 +143,100 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5AB6270F</tstamp>
     </comp>
-    <comp ref="C3">
-      <value>2u2 6V3</value>
-      <footprint>Capacitors_SMD:C_0402</footprint>
-      <libsource lib="device" part="C"/>
-      <sheetpath names="/MCU/" tstamps="/5A9B3060/"/>
-      <tstamp>5A9B323D</tstamp>
-    </comp>
     <comp ref="C2">
-      <value>2u2 6V3</value>
-      <footprint>Capacitors_SMD:C_0402</footprint>
+      <value>C</value>
       <libsource lib="device" part="C"/>
-      <sheetpath names="/MCU/" tstamps="/5A9B3060/"/>
-      <tstamp>5A9B33BC</tstamp>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ABF6D8D</tstamp>
     </comp>
-    <comp ref="C4">
-      <value>2u2 6V3</value>
-      <footprint>Capacitors_SMD:C_0402</footprint>
+    <comp ref="U2">
+      <value>TPS22810</value>
+      <footprint>lakotamm-miscellaneous:WSON-6_2x2mm_Pitch0.65mm</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/tps22810.pdf</datasheet>
+      <fields>
+        <field name="MPN">TPS22810DRV</field>
+      </fields>
+      <libsource lib="lakotamm-loadswitch" part="TPS22810"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5ABFFB1E</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>C</value>
       <libsource lib="device" part="C"/>
-      <sheetpath names="/MCU/" tstamps="/5A9B3060/"/>
-      <tstamp>5A9B3893</tstamp>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AC077A4</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>1M</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AC0CC9F</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>1M</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AC0CDB1</tstamp>
     </comp>
     <comp ref="C5">
       <value>2u2 6V3</value>
       <footprint>Capacitors_SMD:C_0402</footprint>
       <libsource lib="device" part="C"/>
       <sheetpath names="/MCU/" tstamps="/5A9B3060/"/>
-      <tstamp>5A9B39ED</tstamp>
+      <tstamp>5A9B323D</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>2u2 6V3</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/MCU/" tstamps="/5A9B3060/"/>
+      <tstamp>5A9B33BC</tstamp>
     </comp>
     <comp ref="C6">
       <value>2u2 6V3</value>
       <footprint>Capacitors_SMD:C_0402</footprint>
       <libsource lib="device" part="C"/>
       <sheetpath names="/MCU/" tstamps="/5A9B3060/"/>
-      <tstamp>5A9B3B25</tstamp>
+      <tstamp>5A9B3893</tstamp>
     </comp>
     <comp ref="C7">
       <value>2u2 6V3</value>
       <footprint>Capacitors_SMD:C_0402</footprint>
       <libsource lib="device" part="C"/>
       <sheetpath names="/MCU/" tstamps="/5A9B3060/"/>
+      <tstamp>5A9B39ED</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>2u2 6V3</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/MCU/" tstamps="/5A9B3060/"/>
+      <tstamp>5A9B3B25</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>2u2 6V3</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/MCU/" tstamps="/5A9B3060/"/>
       <tstamp>5A9B3B84</tstamp>
     </comp>
-    <comp ref="R4">
+    <comp ref="R5">
       <value>10k</value>
       <footprint>Resistors_SMD:R_0402</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/MCU/" tstamps="/5A9B3060/"/>
       <tstamp>5A9B431F</tstamp>
     </comp>
-    <comp ref="R3">
+    <comp ref="R4">
       <value>NM</value>
       <footprint>Resistors_SMD:R_0402</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/MCU/" tstamps="/5A9B3060/"/>
       <tstamp>5A9B4434</tstamp>
     </comp>
-    <comp ref="U2">
+    <comp ref="U3">
       <value>TPS70925</value>
       <footprint>lakotamm-miscellaneous:WSON-6_2x2mm_Pitch0.65mm</footprint>
       <datasheet>http://www.ti.com/lit/ds/symlink/tps709.pdf</datasheet>
@@ -230,7 +247,7 @@
       <sheetpath names="/MCU/" tstamps="/5A9B3060/"/>
       <tstamp>5AA7A66F</tstamp>
     </comp>
-    <comp ref="U3">
+    <comp ref="U4">
       <value>STM32L011F4Ux</value>
       <footprint>Housings_DFN_QFN:ST_UFQFPN-20_3x3mm_Pitch0.5mm</footprint>
       <datasheet>http://www.st.com/resource/en/datasheet/stm32l011f4.pdf</datasheet>
@@ -241,119 +258,14 @@
       <sheetpath names="/MCU/" tstamps="/5A9B3060/"/>
       <tstamp>5AA7A3A1</tstamp>
     </comp>
-    <comp ref="U4">
-      <value>TPS61236P</value>
-      <datasheet>http://www.ti.com/lit/ds/symlink/tps61236p.pdf</datasheet>
-      <fields>
-        <field name="MPN">TPS61236PRWL</field>
-      </fields>
-      <libsource lib="lakotamm-powersupply" part="TPS61236P"/>
-      <sheetpath names="/Boost converter/" tstamps="/5AA4001F/"/>
-      <tstamp>5AA40BBB</tstamp>
-    </comp>
-    <comp ref="L1">
-      <value>1.2 uH 18mOhm</value>
-      <fields>
-        <field name="MPN">IHLP1212BZER1R0M11</field>
-      </fields>
-      <libsource lib="device" part="L"/>
-      <sheetpath names="/Boost converter/" tstamps="/5AA4001F/"/>
-      <tstamp>5AA40C48</tstamp>
-    </comp>
-    <comp ref="C10">
-      <value>10pF</value>
-      <footprint>Capacitors_SMD:C_0402</footprint>
-      <fields>
-        <field name="MPN">GRM1555C1H100FA01D</field>
-      </fields>
-      <libsource lib="device" part="C"/>
-      <sheetpath names="/Boost converter/" tstamps="/5AA4001F/"/>
-      <tstamp>5AA40CF8</tstamp>
-    </comp>
-    <comp ref="R7">
-      <value>620k</value>
-      <footprint>Resistors_SMD:R_0402</footprint>
-      <libsource lib="device" part="R"/>
-      <sheetpath names="/Boost converter/" tstamps="/5AA4001F/"/>
-      <tstamp>5AA40DAF</tstamp>
-    </comp>
-    <comp ref="R8">
-      <value>200k</value>
-      <footprint>Resistors_SMD:R_0402</footprint>
-      <libsource lib="device" part="R"/>
-      <sheetpath names="/Boost converter/" tstamps="/5AA4001F/"/>
-      <tstamp>5AA40DF4</tstamp>
-    </comp>
-    <comp ref="C11">
-      <value>33uF 6V3</value>
-      <footprint>Capacitors_SMD:C_0805</footprint>
-      <fields>
-        <field name="MPN">C2012X5R0J336M125AC</field>
-      </fields>
-      <libsource lib="device" part="C"/>
-      <sheetpath names="/Boost converter/" tstamps="/5AA4001F/"/>
-      <tstamp>5AA40FA0</tstamp>
-    </comp>
-    <comp ref="C8">
-      <value>15uF 4V</value>
-      <footprint>Capacitors_SMD:C_0603</footprint>
-      <fields>
-        <field name="MPN">C1608X5R0G156M080AA</field>
-      </fields>
-      <libsource lib="device" part="C"/>
-      <sheetpath names="/Boost converter/" tstamps="/5AA4001F/"/>
-      <tstamp>5AA411D9</tstamp>
-    </comp>
-    <comp ref="R5">
-      <value>200k</value>
-      <footprint>Resistors_SMD:R_0402</footprint>
-      <libsource lib="device" part="R"/>
-      <sheetpath names="/Boost converter/" tstamps="/5AA4001F/"/>
-      <tstamp>5AA417A7</tstamp>
-    </comp>
-    <comp ref="R9">
-      <value>200k</value>
-      <footprint>Resistors_SMD:R_0402</footprint>
-      <libsource lib="device" part="R"/>
-      <sheetpath names="/Boost converter/" tstamps="/5AA4001F/"/>
-      <tstamp>5AA41C36</tstamp>
-    </comp>
-    <comp ref="R10">
-      <value>620k</value>
-      <footprint>Resistors_SMD:R_0402</footprint>
-      <libsource lib="device" part="R"/>
-      <sheetpath names="/Boost converter/" tstamps="/5AA4001F/"/>
-      <tstamp>5AB62A62</tstamp>
-    </comp>
-    <comp ref="R11">
-      <value>200k</value>
-      <footprint>Resistors_SMD:R_0402</footprint>
-      <libsource lib="device" part="R"/>
-      <sheetpath names="/Boost converter/" tstamps="/5AA4001F/"/>
-      <tstamp>5AB62B12</tstamp>
-    </comp>
-    <comp ref="R6">
-      <value>41k2</value>
-      <footprint>Resistors_SMD:R_0402</footprint>
-      <libsource lib="device" part="R"/>
-      <sheetpath names="/Boost converter/" tstamps="/5AA4001F/"/>
-      <tstamp>5AB632FE</tstamp>
-    </comp>
-    <comp ref="C9">
-      <value>10nF 10V</value>
-      <footprint>Capacitors_SMD:C_0402</footprint>
-      <libsource lib="device" part="C"/>
-      <sheetpath names="/Boost converter/" tstamps="/5AA4001F/"/>
-      <tstamp>5AB63412</tstamp>
-    </comp>
-    <comp ref="R18">
+    <comp ref="R12">
       <value>1M</value>
       <footprint>Resistors_SMD:R_0402</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Charger/" tstamps="/5AA3AC9F/"/>
       <tstamp>5AA78F4C</tstamp>
     </comp>
-    <comp ref="R19">
+    <comp ref="R13">
       <value>1M</value>
       <footprint>Resistors_SMD:R_0402</footprint>
       <libsource lib="device" part="R"/>
@@ -371,7 +283,7 @@
       <sheetpath names="/Charger/" tstamps="/5AA3AC9F/"/>
       <tstamp>5AA84E21</tstamp>
     </comp>
-    <comp ref="R15">
+    <comp ref="R9">
       <value>56R</value>
       <footprint>Resistors_SMD:R_0402</footprint>
       <libsource lib="device" part="R"/>
@@ -389,21 +301,21 @@
       <sheetpath names="/Charger/" tstamps="/5AA3AC9F/"/>
       <tstamp>5AA863C5</tstamp>
     </comp>
-    <comp ref="R12">
+    <comp ref="R6">
       <value>1k2</value>
       <footprint>Resistors_SMD:R_0402</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Charger/" tstamps="/5AA3AC9F/"/>
       <tstamp>5AA86C77</tstamp>
     </comp>
-    <comp ref="C23">
+    <comp ref="C21">
       <value>2u2 6V3</value>
       <footprint>Capacitors_SMD:C_0402</footprint>
       <libsource lib="device" part="C"/>
       <sheetpath names="/Charger/" tstamps="/5AA3AC9F/"/>
       <tstamp>5AA87B8B</tstamp>
     </comp>
-    <comp ref="C14">
+    <comp ref="C12">
       <value>10nF 10V</value>
       <footprint>Capacitors_SMD:C_0402</footprint>
       <fields>
@@ -413,28 +325,28 @@
       <sheetpath names="/Charger/" tstamps="/5AA3AC9F/"/>
       <tstamp>5AA87D3B</tstamp>
     </comp>
-    <comp ref="C19">
+    <comp ref="C17">
       <value>10nF 10V</value>
       <footprint>Capacitors_SMD:C_0402</footprint>
       <libsource lib="device" part="C"/>
       <sheetpath names="/Charger/" tstamps="/5AA3AC9F/"/>
       <tstamp>5AA87DF5</tstamp>
     </comp>
-    <comp ref="C18">
+    <comp ref="C16">
       <value>22nF 25V</value>
       <footprint>Capacitors_SMD:C_0402</footprint>
       <libsource lib="device" part="C"/>
       <sheetpath names="/Charger/" tstamps="/5AA3AC9F/"/>
       <tstamp>5AA882B8</tstamp>
     </comp>
-    <comp ref="C17">
+    <comp ref="C15">
       <value>470nF 25V</value>
       <footprint>Capacitors_SMD:C_0402</footprint>
       <libsource lib="device" part="C"/>
       <sheetpath names="/Charger/" tstamps="/5AA3AC9F/"/>
       <tstamp>5AA8A27D</tstamp>
     </comp>
-    <comp ref="C16">
+    <comp ref="C14">
       <value>470nF 25V</value>
       <footprint>Capacitors_SMD:C_0402</footprint>
       <fields>
@@ -444,7 +356,7 @@
       <sheetpath names="/Charger/" tstamps="/5AA3AC9F/"/>
       <tstamp>5AA8A4C2</tstamp>
     </comp>
-    <comp ref="C15">
+    <comp ref="C13">
       <value>22nF 25V</value>
       <footprint>Capacitors_SMD:C_0402</footprint>
       <fields>
@@ -454,26 +366,26 @@
       <sheetpath names="/Charger/" tstamps="/5AA3AC9F/"/>
       <tstamp>5AA88198</tstamp>
     </comp>
-    <comp ref="C13">
+    <comp ref="C11">
       <value>C</value>
       <libsource lib="device" part="C"/>
       <sheetpath names="/Charger/" tstamps="/5AA3AC9F/"/>
       <tstamp>5AB055C0</tstamp>
     </comp>
-    <comp ref="C12">
+    <comp ref="C10">
       <value>C</value>
       <libsource lib="device" part="C"/>
       <sheetpath names="/Charger/" tstamps="/5AA3AC9F/"/>
       <tstamp>5AB0567E</tstamp>
     </comp>
-    <comp ref="R17">
+    <comp ref="R11">
       <value>180R</value>
       <footprint>Resistors_SMD:R_0402</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Charger/" tstamps="/5AA3AC9F/"/>
       <tstamp>5AB0687F</tstamp>
     </comp>
-    <comp ref="C20">
+    <comp ref="C18">
       <value>4u7 16V</value>
       <footprint>Capacitors_SMD:C_0603</footprint>
       <fields>
@@ -483,35 +395,35 @@
       <sheetpath names="/Charger/" tstamps="/5AA3AC9F/"/>
       <tstamp>5AB0745B</tstamp>
     </comp>
-    <comp ref="C21">
+    <comp ref="C19">
       <value>4u7 16V</value>
       <footprint>Capacitors_SMD:C_0603</footprint>
       <libsource lib="device" part="C"/>
       <sheetpath names="/Charger/" tstamps="/5AA3AC9F/"/>
       <tstamp>5AB15596</tstamp>
     </comp>
-    <comp ref="R13">
+    <comp ref="R7">
       <value>R</value>
       <footprint>Resistors_SMD:R_0402</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Charger/" tstamps="/5AA3AC9F/"/>
       <tstamp>5AB15ADC</tstamp>
     </comp>
-    <comp ref="C22">
+    <comp ref="C20">
       <value>470nF 25V</value>
       <footprint>Capacitors_SMD:C_0402</footprint>
       <libsource lib="device" part="C"/>
       <sheetpath names="/Charger/" tstamps="/5AA3AC9F/"/>
       <tstamp>5AB15F72</tstamp>
     </comp>
-    <comp ref="R14">
+    <comp ref="R8">
       <value>10K</value>
       <footprint>Resistors_SMD:R_0402</footprint>
       <libsource lib="device" part="R"/>
       <sheetpath names="/Charger/" tstamps="/5AA3AC9F/"/>
       <tstamp>5AB17BEE</tstamp>
     </comp>
-    <comp ref="R16">
+    <comp ref="R10">
       <value>120R</value>
       <footprint>Resistors_SMD:R_0402</footprint>
       <libsource lib="device" part="R"/>
@@ -705,23 +617,6 @@
         <pin num="5" name="Thermal_pad" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="device" part="L">
-      <description>Inductor</description>
-      <footprints>
-        <fp>Choke_*</fp>
-        <fp>*Coil*</fp>
-        <fp>Inductor_*</fp>
-        <fp>L_*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">L</field>
-        <field name="Value">L</field>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="passive"/>
-        <pin num="2" name="2" type="passive"/>
-      </pins>
-    </libpart>
     <libpart lib="device" part="LED">
       <description>LED generic</description>
       <docs>~</docs>
@@ -784,25 +679,21 @@
         <pin num="20" name="PB9-BOOT0" type="BiDi"/>
       </pins>
     </libpart>
-    <libpart lib="lakotamm-powersupply" part="TPS61236P">
-      <description>8-A Valley Current Synchronous Boost Converters with Constant Current</description>
-      <docs>http://www.ti.com/lit/ds/symlink/tps61236p.pdf</docs>
+    <libpart lib="lakotamm-loadswitch" part="TPS22810">
       <fields>
         <field name="Reference">U</field>
-        <field name="Value">TPS61236P</field>
-        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/tps61236p.pdf</field>
-        <field name="MPN">TPS61236PRWL</field>
+        <field name="Value">TPS22810</field>
+        <field name="Footprint">lakotamm-miscellaneous:WSON-6_2x2mm_Pitch0.65mm</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/tps22810.pdf</field>
+        <field name="MPN">TPS22810DRV</field>
       </fields>
       <pins>
-        <pin num="1" name="PGND" type="power_in"/>
-        <pin num="2" name="SW" type="output"/>
-        <pin num="3" name="VIN" type="power_in"/>
-        <pin num="4" name="CC" type="passive"/>
-        <pin num="5" name="AGND" type="power_in"/>
-        <pin num="6" name="FB" type="input"/>
-        <pin num="7" name="EN" type="input"/>
-        <pin num="8" name="INACT" type="power_out"/>
-        <pin num="9" name="VOUT" type="power_out"/>
+        <pin num="1" name="VOUT" type="power_out"/>
+        <pin num="2" name="QOD" type="output"/>
+        <pin num="3" name="CT" type="output"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="EN/UVLO" type="input"/>
+        <pin num="6" name="VIN" type="power_in"/>
       </pins>
     </libpart>
     <libpart lib="lakotamm-powersupply" part="TPS709">
@@ -823,6 +714,12 @@
     </libpart>
   </libparts>
   <libraries>
+    <library logical="Connector">
+      <uri>/home/lakotamm/GIT/kicad-library/library/Connector.lib</uri>
+    </library>
+    <library logical="lakotamm-loadswitch">
+      <uri>/home/lakotamm/GIT/lakotamm-kicad-lib/lakotamm-loadswitch.lib</uri>
+    </library>
     <library logical="device">
       <uri>/home/lakotamm/GIT/kicad-library/library/device.lib</uri>
     </library>
@@ -841,280 +738,258 @@
     <library logical="lakotamm-wireless">
       <uri>/home/lakotamm/GIT/lakotamm-kicad-lib/lakotamm-wireless.lib</uri>
     </library>
-    <library logical="Connector">
-      <uri>/home/lakotamm/GIT/kicad-library/library/Connector.lib</uri>
-    </library>
   </libraries>
   <nets>
-    <net code="1" name="GND">
-      <node ref="R12" pin="2"/>
-      <node ref="R4" pin="2"/>
-      <node ref="R6" pin="2"/>
-      <node ref="C23" pin="2"/>
-      <node ref="C9" pin="2"/>
-      <node ref="U3" pin="12"/>
-      <node ref="IC1" pin="20"/>
-      <node ref="IC1" pin="21"/>
-      <node ref="U2" pin="3"/>
-      <node ref="U2" pin="7"/>
-      <node ref="J3" pin="2"/>
-      <node ref="C22" pin="2"/>
-      <node ref="IC1" pin="1"/>
-      <node ref="R19" pin="2"/>
-      <node ref="C6" pin="2"/>
-      <node ref="U4" pin="1"/>
-      <node ref="C7" pin="2"/>
-      <node ref="R11" pin="2"/>
-      <node ref="C4" pin="2"/>
-      <node ref="C5" pin="2"/>
-      <node ref="C8" pin="2"/>
-      <node ref="C3" pin="2"/>
-      <node ref="C11" pin="2"/>
-      <node ref="R8" pin="2"/>
-      <node ref="C2" pin="2"/>
-      <node ref="U4" pin="5"/>
-      <node ref="C20" pin="2"/>
-      <node ref="R1" pin="2"/>
-      <node ref="J4" pin="3"/>
-      <node ref="J5" pin="3"/>
-      <node ref="C21" pin="2"/>
-      <node ref="IC1" pin="9"/>
-      <node ref="U1" pin="5"/>
-      <node ref="Q2" pin="2"/>
-      <node ref="U1" pin="2"/>
-      <node ref="Q1" pin="2"/>
-      <node ref="C1" pin="2"/>
-      <node ref="R17" pin="2"/>
-    </net>
-    <net code="2" name="+BATT">
-      <node ref="U2" pin="6"/>
-      <node ref="R5" pin="1"/>
-      <node ref="R18" pin="1"/>
-      <node ref="C23" pin="1"/>
-      <node ref="BZ1" pin="1"/>
-      <node ref="C8" pin="1"/>
-      <node ref="IC1" pin="4"/>
-      <node ref="C2" pin="1"/>
-      <node ref="L1" pin="1"/>
-      <node ref="J1" pin="3"/>
-      <node ref="Q1" pin="1"/>
+    <net code="1" name="/MCU/NRST">
+      <node ref="J3" pin="4"/>
       <node ref="U4" pin="3"/>
     </net>
-    <net code="3" name="Net-(J1-Pad4)">
-      <node ref="Q1" pin="3"/>
-      <node ref="J1" pin="4"/>
-    </net>
-    <net code="4" name="/Thermistor">
-      <node ref="J1" pin="2"/>
-      <node ref="R13" pin="2"/>
-    </net>
-    <net code="5" name="/Boost converter/VOUT">
-      <node ref="R7" pin="1"/>
-      <node ref="C10" pin="1"/>
-      <node ref="U4" pin="9"/>
-      <node ref="R10" pin="1"/>
-      <node ref="C11" pin="1"/>
-      <node ref="J5" pin="2"/>
-    </net>
-    <net code="6" name="/MCU/USART_RX">
+    <net code="2" name="/MCU/USART_RX">
+      <node ref="U4" pin="15"/>
       <node ref="J4" pin="1"/>
-      <node ref="U3" pin="15"/>
     </net>
-    <net code="7" name="/MCU/USART_TX">
+    <net code="3" name="/MCU/USART_TX">
+      <node ref="U4" pin="14"/>
       <node ref="J4" pin="2"/>
-      <node ref="U3" pin="14"/>
     </net>
-    <net code="8" name="Net-(J5-Pad1)">
-      <node ref="J5" pin="1"/>
-      <node ref="R2" pin="2"/>
-    </net>
-    <net code="9" name="/LPUART_TX">
-      <node ref="U3" pin="18"/>
-      <node ref="R2" pin="1"/>
-    </net>
-    <net code="10" name="/MCU/BATT_Voltage">
-      <node ref="R19" pin="1"/>
-      <node ref="U3" pin="6"/>
-      <node ref="R18" pin="2"/>
-    </net>
-    <net code="11" name="Net-(AE1-Pad2)">
-      <node ref="AE1" pin="2"/>
-    </net>
-    <net code="12" name="Net-(AE1-Pad1)">
-      <node ref="AE1" pin="1"/>
-    </net>
-    <net code="13" name="/Charger/Charge_control">
-      <node ref="R14" pin="1"/>
-      <node ref="IC1" pin="13"/>
-      <node ref="U3" pin="9"/>
-      <node ref="R13" pin="1"/>
-      <node ref="C22" pin="1"/>
-    </net>
-    <net code="14" name="/MCU/Output_Voltage">
-      <node ref="R10" pin="2"/>
-      <node ref="U3" pin="7"/>
-      <node ref="R11" pin="1"/>
-    </net>
-    <net code="15" name="/MCU/Output_Current">
-      <node ref="R6" pin="1"/>
-      <node ref="C9" pin="1"/>
-      <node ref="U3" pin="8"/>
+    <net code="4" name="VDD">
+      <node ref="C5" pin="1"/>
+      <node ref="U4" pin="13"/>
+      <node ref="D1" pin="2"/>
       <node ref="U4" pin="4"/>
+      <node ref="R4" pin="1"/>
+      <node ref="U3" pin="1"/>
+      <node ref="U1" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="C7" pin="1"/>
+      <node ref="C6" pin="1"/>
+      <node ref="C9" pin="1"/>
+      <node ref="C8" pin="1"/>
     </net>
-    <net code="16" name="/MCU/NRST">
-      <node ref="J3" pin="4"/>
-      <node ref="U3" pin="3"/>
-    </net>
-    <net code="17" name="/Charger/Coil_1">
-      <node ref="C12" pin="2"/>
-      <node ref="J2" pin="2"/>
-    </net>
-    <net code="18" name="/Charger/~CHARGING">
-      <node ref="IC1" pin="7"/>
-      <node ref="R15" pin="2"/>
-      <node ref="U3" pin="19"/>
-    </net>
-    <net code="19" name="/Charger/Coil_2">
-      <node ref="C17" pin="2"/>
-      <node ref="C18" pin="2"/>
-      <node ref="J2" pin="1"/>
-      <node ref="C19" pin="2"/>
-      <node ref="C13" pin="1"/>
-      <node ref="IC1" pin="19"/>
-    </net>
-    <net code="20" name="/MCU/SWCLK">
-      <node ref="J3" pin="1"/>
-      <node ref="U3" pin="17"/>
-    </net>
-    <net code="21" name="/Thermistor_OFF">
-      <node ref="J1" pin="1"/>
-      <node ref="R14" pin="2"/>
-    </net>
-    <net code="22" name="/MCU/SWDIO">
-      <node ref="U3" pin="16"/>
+    <net code="5" name="/MCU/SWDIO">
+      <node ref="U4" pin="16"/>
       <node ref="J3" pin="3"/>
     </net>
-    <net code="23" name="/MCU/HAL_SEN_1">
-      <node ref="U3" pin="5"/>
+    <net code="6" name="/MCU/HAL_SEN_1">
       <node ref="U1" pin="4"/>
+      <node ref="U4" pin="5"/>
     </net>
-    <net code="24" name="/MCU/HAL_SEN_2">
-      <node ref="U3" pin="2"/>
+    <net code="7" name="/MCU/HAL_SEN_2">
       <node ref="U1" pin="3"/>
+      <node ref="U4" pin="2"/>
     </net>
-    <net code="25" name="/MCU/BUZZER">
-      <node ref="U3" pin="11"/>
-      <node ref="R1" pin="1"/>
-      <node ref="Q2" pin="1"/>
-    </net>
-    <net code="26" name="/Boost converter/Voltage_control">
-      <node ref="R9" pin="1"/>
-      <node ref="U3" pin="10"/>
-    </net>
-    <net code="27" name="Net-(BZ1-Pad2)">
+    <net code="8" name="Net-(BZ1-Pad2)">
       <node ref="BZ1" pin="2"/>
       <node ref="Q2" pin="3"/>
     </net>
-    <net code="28" name="/Boost converter/ENA">
-      <node ref="U3" pin="1"/>
-      <node ref="U4" pin="7"/>
+    <net code="9" name="/Charger/Battery_voltage">
+      <node ref="R12" pin="2"/>
+      <node ref="R13" pin="1"/>
+    </net>
+    <net code="10" name="GND">
+      <node ref="C8" pin="2"/>
+      <node ref="C3" pin="2"/>
       <node ref="R5" pin="2"/>
-    </net>
-    <net code="29" name="VDD">
-      <node ref="C6" pin="1"/>
-      <node ref="C7" pin="1"/>
-      <node ref="C4" pin="1"/>
-      <node ref="C5" pin="1"/>
-      <node ref="U2" pin="1"/>
-      <node ref="R3" pin="1"/>
-      <node ref="U3" pin="13"/>
-      <node ref="C1" pin="1"/>
-      <node ref="U1" pin="1"/>
-      <node ref="U3" pin="4"/>
-      <node ref="C3" pin="1"/>
-      <node ref="D1" pin="2"/>
-    </net>
-    <net code="30" name="/MCU/BOOT">
-      <node ref="U3" pin="20"/>
+      <node ref="U4" pin="12"/>
       <node ref="R3" pin="2"/>
-      <node ref="R4" pin="1"/>
-    </net>
-    <net code="31" name="Net-(U2-Pad4)">
+      <node ref="U3" pin="7"/>
+      <node ref="U3" pin="3"/>
+      <node ref="C5" pin="2"/>
+      <node ref="R6" pin="2"/>
+      <node ref="C20" pin="2"/>
+      <node ref="IC1" pin="21"/>
+      <node ref="IC1" pin="1"/>
+      <node ref="R13" pin="2"/>
+      <node ref="IC1" pin="9"/>
+      <node ref="IC1" pin="20"/>
+      <node ref="C7" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C6" pin="2"/>
+      <node ref="C21" pin="2"/>
+      <node ref="C9" pin="2"/>
+      <node ref="R11" pin="2"/>
+      <node ref="C18" pin="2"/>
+      <node ref="C19" pin="2"/>
+      <node ref="J3" pin="2"/>
+      <node ref="Q2" pin="2"/>
+      <node ref="J4" pin="3"/>
+      <node ref="C2" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="U1" pin="5"/>
       <node ref="U2" pin="4"/>
+      <node ref="J5" pin="3"/>
+      <node ref="Q1" pin="2"/>
+      <node ref="U1" pin="2"/>
+      <node ref="R1" pin="2"/>
     </net>
-    <net code="32" name="Net-(C14-Pad2)">
-      <node ref="C14" pin="2"/>
-      <node ref="IC1" pin="3"/>
+    <net code="11" name="/LPUART_TX">
+      <node ref="U4" pin="18"/>
+      <node ref="J5" pin="1"/>
     </net>
-    <net code="33" name="Net-(C19-Pad1)">
-      <node ref="C19" pin="1"/>
-      <node ref="IC1" pin="17"/>
+    <net code="12" name="Net-(U2-Pad3)">
+      <node ref="U2" pin="3"/>
     </net>
-    <net code="34" name="Net-(IC1-Pad10)">
-      <node ref="IC1" pin="10"/>
+    <net code="13" name="Net-(C3-Pad1)">
+      <node ref="J5" pin="2"/>
+      <node ref="C3" pin="1"/>
+      <node ref="R2" pin="1"/>
+      <node ref="U2" pin="1"/>
+    </net>
+    <net code="14" name="/MCU/SWCLK">
+      <node ref="U4" pin="17"/>
+      <node ref="J3" pin="1"/>
+    </net>
+    <net code="15" name="/MCU/Output_control">
+      <node ref="U2" pin="5"/>
+    </net>
+    <net code="16" name="+BATT">
+      <node ref="U2" pin="6"/>
+      <node ref="C2" pin="1"/>
+      <node ref="Q1" pin="1"/>
+      <node ref="U3" pin="6"/>
+      <node ref="IC1" pin="4"/>
       <node ref="R12" pin="1"/>
-    </net>
-    <net code="35" name="Net-(D1-Pad1)">
-      <node ref="D1" pin="1"/>
-      <node ref="R15" pin="1"/>
-    </net>
-    <net code="36" name="Net-(C16-Pad1)">
-      <node ref="C16" pin="1"/>
-      <node ref="IC1" pin="5"/>
-    </net>
-    <net code="37" name="Net-(C17-Pad1)">
-      <node ref="C17" pin="1"/>
-      <node ref="IC1" pin="16"/>
-    </net>
-    <net code="38" name="Net-(C12-Pad1)">
-      <node ref="C15" pin="1"/>
-      <node ref="C14" pin="1"/>
-      <node ref="C16" pin="2"/>
-      <node ref="IC1" pin="2"/>
-      <node ref="C12" pin="1"/>
-      <node ref="C13" pin="2"/>
-    </net>
-    <net code="39" name="Net-(C15-Pad2)">
-      <node ref="C15" pin="2"/>
-      <node ref="IC1" pin="6"/>
-    </net>
-    <net code="40" name="Net-(C18-Pad1)">
-      <node ref="C18" pin="1"/>
-      <node ref="IC1" pin="15"/>
-    </net>
-    <net code="41" name="/Charger/ILIM">
-      <node ref="R16" pin="1"/>
-      <node ref="IC1" pin="12"/>
-    </net>
-    <net code="42" name="/Charger/FOD">
-      <node ref="R16" pin="2"/>
-      <node ref="R17" pin="1"/>
-      <node ref="IC1" pin="14"/>
-    </net>
-    <net code="43" name="Net-(C20-Pad1)">
-      <node ref="C20" pin="1"/>
       <node ref="C21" pin="1"/>
-      <node ref="IC1" pin="18"/>
+      <node ref="C4" pin="1"/>
+      <node ref="J1" pin="3"/>
+      <node ref="BZ1" pin="1"/>
     </net>
-    <net code="44" name="Net-(IC1-Pad8)">
-      <node ref="IC1" pin="8"/>
+    <net code="17" name="/Output_voltage">
+      <node ref="R2" pin="2"/>
+      <node ref="R3" pin="1"/>
     </net>
-    <net code="45" name="Net-(IC1-Pad11)">
-      <node ref="IC1" pin="11"/>
+    <net code="18" name="/Charger/Coil_2">
+      <node ref="J2" pin="1"/>
+      <node ref="C11" pin="1"/>
+      <node ref="IC1" pin="19"/>
+      <node ref="C17" pin="2"/>
+      <node ref="C16" pin="2"/>
+      <node ref="C15" pin="2"/>
     </net>
-    <net code="46" name="Net-(C10-Pad2)">
+    <net code="19" name="Net-(J1-Pad4)">
+      <node ref="J1" pin="4"/>
+      <node ref="Q1" pin="3"/>
+    </net>
+    <net code="20" name="/Charger/Coil_1">
+      <node ref="J2" pin="2"/>
       <node ref="C10" pin="2"/>
-      <node ref="R9" pin="2"/>
-      <node ref="R8" pin="1"/>
+    </net>
+    <net code="21" name="/Thermistor">
+      <node ref="J1" pin="2"/>
       <node ref="R7" pin="2"/>
+    </net>
+    <net code="22" name="/Charger/~CHARGING">
+      <node ref="R9" pin="2"/>
+      <node ref="U4" pin="19"/>
+      <node ref="IC1" pin="7"/>
+    </net>
+    <net code="23" name="/Thermistor_OFF">
+      <node ref="J1" pin="1"/>
+      <node ref="R8" pin="2"/>
+    </net>
+    <net code="24" name="/Charger/Charge_control">
+      <node ref="IC1" pin="13"/>
+      <node ref="U4" pin="9"/>
+      <node ref="C20" pin="1"/>
+      <node ref="R8" pin="1"/>
+      <node ref="R7" pin="1"/>
+    </net>
+    <net code="25" name="/MCU/BUZZER">
+      <node ref="U4" pin="11"/>
+      <node ref="Q2" pin="1"/>
+      <node ref="R1" pin="1"/>
+    </net>
+    <net code="26" name="Net-(U2-Pad2)">
+      <node ref="U2" pin="2"/>
+    </net>
+    <net code="27" name="Net-(AE1-Pad1)">
+      <node ref="AE1" pin="1"/>
+    </net>
+    <net code="28" name="Net-(AE1-Pad2)">
+      <node ref="AE1" pin="2"/>
+    </net>
+    <net code="29" name="/MCU/BOOT">
+      <node ref="R5" pin="1"/>
+      <node ref="U4" pin="20"/>
+      <node ref="R4" pin="2"/>
+    </net>
+    <net code="30" name="Net-(U4-Pad10)">
+      <node ref="U4" pin="10"/>
+    </net>
+    <net code="31" name="Net-(U4-Pad6)">
       <node ref="U4" pin="6"/>
     </net>
-    <net code="47" name="Net-(U4-Pad8)">
+    <net code="32" name="Net-(U4-Pad7)">
+      <node ref="U4" pin="7"/>
+    </net>
+    <net code="33" name="Net-(U4-Pad8)">
       <node ref="U4" pin="8"/>
     </net>
-    <net code="48" name="Net-(L1-Pad2)">
-      <node ref="L1" pin="2"/>
-      <node ref="U4" pin="2"/>
+    <net code="34" name="Net-(U4-Pad1)">
+      <node ref="U4" pin="1"/>
+    </net>
+    <net code="35" name="Net-(U3-Pad4)">
+      <node ref="U3" pin="4"/>
+    </net>
+    <net code="36" name="/Charger/ILIM">
+      <node ref="IC1" pin="12"/>
+      <node ref="R10" pin="1"/>
+    </net>
+    <net code="37" name="Net-(C18-Pad1)">
+      <node ref="C18" pin="1"/>
+      <node ref="IC1" pin="18"/>
+      <node ref="C19" pin="1"/>
+    </net>
+    <net code="38" name="Net-(C15-Pad1)">
+      <node ref="C15" pin="1"/>
+      <node ref="IC1" pin="16"/>
+    </net>
+    <net code="39" name="Net-(C17-Pad1)">
+      <node ref="C17" pin="1"/>
+      <node ref="IC1" pin="17"/>
+    </net>
+    <net code="40" name="Net-(C12-Pad2)">
+      <node ref="IC1" pin="3"/>
+      <node ref="C12" pin="2"/>
+    </net>
+    <net code="41" name="Net-(C16-Pad1)">
+      <node ref="IC1" pin="15"/>
+      <node ref="C16" pin="1"/>
+    </net>
+    <net code="42" name="Net-(C13-Pad2)">
+      <node ref="IC1" pin="6"/>
+      <node ref="C13" pin="2"/>
+    </net>
+    <net code="43" name="Net-(C14-Pad1)">
+      <node ref="IC1" pin="5"/>
+      <node ref="C14" pin="1"/>
+    </net>
+    <net code="44" name="Net-(C10-Pad1)">
+      <node ref="C12" pin="1"/>
+      <node ref="C14" pin="2"/>
+      <node ref="C13" pin="1"/>
+      <node ref="C11" pin="2"/>
+      <node ref="IC1" pin="2"/>
+      <node ref="C10" pin="1"/>
+    </net>
+    <net code="45" name="/Charger/FOD">
+      <node ref="R10" pin="2"/>
+      <node ref="IC1" pin="14"/>
+      <node ref="R11" pin="1"/>
+    </net>
+    <net code="46" name="Net-(IC1-Pad11)">
+      <node ref="IC1" pin="11"/>
+    </net>
+    <net code="47" name="Net-(IC1-Pad8)">
+      <node ref="IC1" pin="8"/>
+    </net>
+    <net code="48" name="Net-(D1-Pad1)">
+      <node ref="D1" pin="1"/>
+      <node ref="R9" pin="1"/>
+    </net>
+    <net code="49" name="Net-(IC1-Pad10)">
+      <node ref="IC1" pin="10"/>
+      <node ref="R6" pin="1"/>
     </net>
   </nets>
 </export>

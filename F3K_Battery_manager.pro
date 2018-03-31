@@ -1,4 +1,4 @@
-update=Fri 23 Mar 2018 08:45:13 PM CET
+update=Sat 31 Mar 2018 06:18:40 PM CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,6 +23,8 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
+[general]
+version=1
 [eeschema]
 version=1
 LibDir=../kicad-library;../lakotamm-kicad-lib;../kicad-library/library
@@ -58,5 +60,4 @@ LibName28=lakotamm-wireless
 LibName29=library/MCU_ST_STM32
 LibName30=library/Transistor
 LibName31=library/Connector
-[general]
-version=1
+LibName32=lakotamm-loadswitch
