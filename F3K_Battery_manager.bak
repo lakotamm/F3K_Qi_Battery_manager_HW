@@ -116,6 +116,8 @@ $Comp
 L C C1
 U 1 1 5AA08E27
 P 2850 5700
+AR Path="/5AA08E27" Ref="C1"  Part="1" 
+AR Path="/5AA3AC9F/5AA08E27" Ref="C1"  Part="1" 
 F 0 "C1" H 2875 5800 50  0000 L CNN
 F 1 "2u2 6V3" V 2700 5550 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0402" H 2888 5550 50  0001 C CNN
@@ -451,7 +453,7 @@ $EndComp
 NoConn ~ 1350 4050
 NoConn ~ 1350 4150
 Text Notes 650  3800 0    60   ~ 0
-Antenna - only for Kicost\n
+Antenna - for calculations\nand Kicost\n
 Wire Wire Line
 	4250 4550 4850 4550
 $Comp
