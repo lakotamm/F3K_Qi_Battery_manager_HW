@@ -36,7 +36,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 3
+Sheet 3 4
 Title ""
 Date ""
 Rev ""
@@ -46,9 +46,9 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 1750 3450 0    60   Input ~ 0
+Text HLabel 1450 3450 0    60   Input ~ 0
 Coil_1
-Text HLabel 1750 3850 0    60   Input ~ 0
+Text HLabel 1450 3850 0    60   Input ~ 0
 Coil_2
 Text HLabel 8650 3000 2    60   Output ~ 0
 Battery_voltage
@@ -250,7 +250,7 @@ F 3 "" H 3150 4250 50  0001 C CNN
 	1    3150 4250
 	0    1    1    0   
 $EndComp
-Text Notes 1700 3150 0    60   ~ 0
+Text Notes 1550 3050 0    60   ~ 0
 change to 47nF \nif loosing communication
 Text Notes 1700 4400 0    60   ~ 0
 change to 47nF \nif loosing communication
@@ -290,7 +290,9 @@ F 4 "GCM155R71H223KA55D" V 3150 3050 60  0001 C CNN "MPN"
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	8450 2950 8450 3050
+	8450 2950 8450 3000
+Wire Wire Line
+	8450 3000 8450 3050
 Wire Wire Line
 	8650 3000 8450 3000
 Connection ~ 8450 3000
@@ -301,7 +303,13 @@ Wire Wire Line
 Wire Wire Line
 	4650 4100 4750 4100
 Wire Wire Line
-	4750 4100 4750 4600
+	4750 4100 4750 4250
+Wire Wire Line
+	4750 4250 4750 4350
+Wire Wire Line
+	4750 4350 4750 4500
+Wire Wire Line
+	4750 4500 4750 4600
 Wire Wire Line
 	4650 4250 4750 4250
 Connection ~ 4750 4250
@@ -324,7 +332,9 @@ Wire Wire Line
 Wire Wire Line
 	4650 3200 4750 3200
 Wire Wire Line
-	6850 3500 7200 3500
+	6850 3500 7050 3500
+Wire Wire Line
+	7050 3500 7200 3500
 Connection ~ 7050 3500
 Wire Wire Line
 	4650 4000 4950 4000
@@ -357,7 +367,7 @@ Connection ~ 2900 3050
 Wire Wire Line
 	3300 4000 3450 4000
 Wire Wire Line
-	3000 4000 2900 4000
+	2900 4000 3000 4000
 Connection ~ 2900 4000
 Wire Wire Line
 	3450 3300 3300 3300
@@ -391,32 +401,56 @@ $EndComp
 $Comp
 L C C10
 U 1 1 5AB0567E
-P 2100 3450
-F 0 "C10" H 2125 3550 50  0000 L CNN
-F 1 "C" H 2125 3350 50  0000 L CNN
-F 2 "" H 2138 3300 50  0001 C CNN
-F 3 "" H 2100 3450 50  0001 C CNN
-	1    2100 3450
+P 1900 3450
+F 0 "C10" H 1925 3550 50  0000 L CNN
+F 1 "C" H 1925 3350 50  0000 L CNN
+F 2 "" H 1938 3300 50  0001 C CNN
+F 3 "" H 1900 3450 50  0001 C CNN
+	1    1900 3450
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1750 3450 1950 3450
+	1450 3450 1600 3450
 Wire Wire Line
-	2250 3450 3450 3450
+	1600 3450 1750 3450
 Wire Wire Line
-	2500 3350 2500 3500
+	2050 3450 2200 3450
+Wire Wire Line
+	2200 3450 2500 3450
+Wire Wire Line
+	2500 3450 2900 3450
+Wire Wire Line
+	2900 3450 3450 3450
+Wire Wire Line
+	2500 3350 2500 3450
+Wire Wire Line
+	2500 3450 2500 3500
 Connection ~ 2900 3450
 Connection ~ 2500 3450
 Wire Wire Line
-	1750 3850 3450 3850
+	1450 3850 2500 3850
+Wire Wire Line
+	2500 3850 2900 3850
+Wire Wire Line
+	2900 3850 3450 3850
 Connection ~ 2900 3850
 Wire Wire Line
 	2500 3800 2500 3850
 Connection ~ 2500 3850
 Wire Wire Line
-	2900 2800 2900 3450
+	2900 2800 2900 3050
 Wire Wire Line
-	2900 3700 2900 4500
+	2900 3050 2900 3300
+Wire Wire Line
+	2900 3300 2900 3450
+Wire Wire Line
+	2900 3700 2900 3850
+Wire Wire Line
+	2900 3850 2900 4000
+Wire Wire Line
+	2900 4000 2900 4250
+Wire Wire Line
+	2900 4250 2900 4500
 $Comp
 L R R11
 U 1 1 5AB0687F
@@ -464,7 +498,9 @@ $EndComp
 Wire Wire Line
 	5200 4100 5200 3600
 Wire Wire Line
-	4650 3600 5550 3600
+	4650 3600 5200 3600
+Wire Wire Line
+	5200 3600 5550 3600
 $Comp
 L GND #PWR40
 U 1 1 5AB07537
@@ -521,7 +557,13 @@ F 3 "" H 6650 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6550 1050 7200 1050
+	6550 1050 6650 1050
+Wire Wire Line
+	6650 1050 6850 1050
+Wire Wire Line
+	6850 1050 7100 1050
+Wire Wire Line
+	7100 1050 7200 1050
 Wire Wire Line
 	6650 1050 6650 1100
 Wire Wire Line
@@ -587,7 +629,9 @@ Wire Wire Line
 Text Label 6900 4200 2    60   ~ 0
 FOD
 Wire Wire Line
-	7050 4150 7050 4250
+	7050 4150 7050 4200
+Wire Wire Line
+	7050 4200 7050 4250
 $Comp
 L R R10
 U 1 1 5AB580B7
@@ -628,4 +672,44 @@ F 3 "" H 2900 3700 50  0001 C CNN
 	1    2900 3700
 	1    0    0    -1  
 $EndComp
+$Comp
+L C C?
+U 1 1 5AC02CB6
+P 1900 3250
+F 0 "C?" H 1925 3350 50  0000 L CNN
+F 1 "C" H 1925 3150 50  0000 L CNN
+F 2 "" H 1938 3100 50  0001 C CNN
+F 3 "" H 1900 3250 50  0001 C CNN
+	1    1900 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L C C?
+U 1 1 5AC02DFA
+P 1900 3700
+F 0 "C?" H 1925 3800 50  0000 L CNN
+F 1 "C" H 1925 3600 50  0000 L CNN
+F 2 "" H 1938 3550 50  0001 C CNN
+F 3 "" H 1900 3700 50  0001 C CNN
+	1    1900 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1600 3700 1750 3700
+Wire Wire Line
+	1600 3250 1600 3450
+Wire Wire Line
+	1600 3450 1600 3700
+Connection ~ 1600 3450
+Wire Wire Line
+	1600 3250 1750 3250
+Wire Wire Line
+	2200 3700 2050 3700
+Wire Wire Line
+	2200 3250 2200 3450
+Wire Wire Line
+	2200 3450 2200 3700
+Connection ~ 2200 3450
+Wire Wire Line
+	2050 3250 2200 3250
 $EndSCHEMATC

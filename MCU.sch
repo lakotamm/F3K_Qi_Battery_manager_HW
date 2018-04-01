@@ -36,7 +36,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 3 4
 Title ""
 Date ""
 Rev ""
@@ -501,6 +501,8 @@ $Comp
 L STM32L011F4Ux U4
 U 1 1 5AA7A3A1
 P 6150 4200
+AR Path="/5AA7A3A1" Ref="U4"  Part="1" 
+AR Path="/5A9B3060/5AA7A3A1" Ref="U4"  Part="1" 
 F 0 "U4" H 7050 3550 60  0000 C CNN
 F 1 "STM32L011F4Ux" H 5450 3550 60  0000 C CNN
 F 2 "Housings_DFN_QFN:ST_UFQFPN-20_3x3mm_Pitch0.5mm" H 6150 3300 60  0001 C CNN
